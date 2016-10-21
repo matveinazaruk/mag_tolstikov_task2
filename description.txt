@@ -1,0 +1,5 @@
+1. split line by '\t' and extract second and third row converted to int
+2. reduce by key, counting sum of values
+3. join to str using '\t'
+4. write to file
+ 
