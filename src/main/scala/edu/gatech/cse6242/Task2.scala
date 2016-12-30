@@ -19,6 +19,6 @@ object Task2 {
     val graphCounts = splitted.reduceByKey(_ + _)
   	
     // store output on given HDFS path.
-    graphCounts.map(c => c._1 + "\t" + c._2).saveAsTextFile("hdfs://localhost:8020" + args(1))
+    graphCounts.map(c => c._1 + "\t" + c._2).saveAsTextFile("hdfs://localhost:8020/" + args(1))
   }
 }
